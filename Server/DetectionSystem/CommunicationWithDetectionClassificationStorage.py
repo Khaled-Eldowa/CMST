@@ -164,7 +164,7 @@ def selectFrames(video_number):
 				#INSERT INTO `detection`.`sighting` (`sightingUrl`, `videoUrl`, `timeOfAppearance`, `numberOfObjects`) VALUES ('resources/sightings/123.png', 'resources/videos/video1.mp4', '7', '1');
 				sqlMain1 = 'INSERT INTO detection.sighting (sightingUrl, videoUrl, timeOfAppearance, numberOfObjects) VALUES ('
 				sqlMain1 += '\'' + './CMSTData/' + str(missionID) +'/DetectionFolder/' + str(video_number) + '/Detected/' + str(x) + '.jpg' + '\','
-				sqlMain1 += '\'' + './CMSTData/' + str(missionID) +'/DetectionFolder/ReceivedData/' + str(video_number) + '.mp4\','
+				sqlMain1 += '\'' + './CMSTData/' + str(missionID) +'/ReceivedData/' + str(video_number) + '.mp4\','
 				sqlMain1 += '\'' + str(float(int(x)/30.0)) + '\', \'' + str(count_detected_objects) + '\')'
 				
 				#execute the sql code
